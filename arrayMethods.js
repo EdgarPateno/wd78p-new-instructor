@@ -73,3 +73,35 @@ let bibleCharactersSlice = bibleCharacters.slice(1, 3); // this will remove lot 
 
 console.log('This is SLICE method: ' + bibleCharactersSlice); // this will not modify the original array
 console.log('This is the new array after slicing: ' + bibleCharacters); // so the original array bibleCharacters still contains lot and abraham
+
+// SORT METHOD - sorts an array in ascending order
+
+const alphabets = ["d", "e", "f", "a", "b", "c"];
+
+let alphabetsSort = alphabets.sort(); // this will sort in ascending order
+console.log('This is SORT method: ' + alphabetsSort);
+
+// SORT in descending order
+
+let alphabetsSort2 = alphabets.reverse(); // this will sort in descending order
+console.log('This is SORT method in descending order: ' + alphabetsSort2);
+
+// SORTING numbers using compare function
+
+const numbers = [132, 212, 143, 54, 65, 126, 347, 118, 259, 210];
+
+let numbersSort = numbers.sort(SortNumbers1); // this will sort in ascending order
+
+function SortNumbers1(a, b) {
+    return a - b;
+}
+
+console.log('This is SORTING numbers using function: ' + numbersSort);
+
+let numbersSort2 = numbers.sort(SortNumbers2); // this will sort in descending order
+
+function SortNumbers2(a, b) {
+    return b - a;
+}
+
+console.log('This is SORTING numbers using function in descending order: ' + numbersSort2);
