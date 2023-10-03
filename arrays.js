@@ -30,6 +30,6 @@ const mixedArray = [1, "edgar", 2, "shella", 3, "kelly", 4, "kerry", 5, "james",
 
 // console.log(mixedArray);
 
-for (let i in mixedArray) {
-    console.log(mixedArray[i]);
+for (let i in mixedArray) {  // simpler way to access the elements inside the array 
+    console.log(mixedArray[i]);  // instead of let i = 0; i > bla bla bla
 }
